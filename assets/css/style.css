@@ -3,7 +3,7 @@
     --primary-color: #222222;
     --secondary-color: #424242;
     --tertiary-color: #848484;
-    --font-1: #c6c6c6;
+    --quaternary-color: #c6c6c6;
     --primary-accent: #ff4500;
     --border-radius-value: 12px;
 }
@@ -18,7 +18,7 @@
 /* Basic recurring styles added here */
 body {
     font-family: Arial, Helvetica, sans-serif;
-    color: var(--font-1);
+    color: var(--quaternary-color);
 }
 
 /* UTILITY CLASSES */
@@ -33,7 +33,7 @@ body {
 .button-content {
     padding: 0px 50px;
     text-shadow: 4px 4px 10px var(--secondary-color);
-    color: var(--font-1);
+    color: var(--quaternary-color);
     text-decoration: none;
 }
 
@@ -217,7 +217,7 @@ header nav ul li a {
     text-align: center;
     width: 30%;
     background-color: var(--primary-color);
-    color: var(--font-1);
+    color: var(--quaternary-color);
     padding: 1vh;
     border-radius: var(--border-radius-value);
 }
@@ -233,13 +233,44 @@ header nav ul li a {
 /* END WORK */
 
 /* BEGIN CONTACT ME */
+.contact-me {
+    background-color: var(--quaternary-color);
+    display: flex;
+    justify-content: space-between;
+}
 
+.contact-me h2 {
+    margin-bottom: 6%;
+}
+
+.contact-me div {
+    color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 8%;
+}
+
+.contact-me div h3 {
+    font-size: 5vh;
+    margin-bottom: 6%;
+}
+
+.contact-me div address {
+    font-size: 3vh;
+}
+
+.contact-me div address a {
+    text-decoration: none;
+    font-weight: 600;
+    color: var(--primary-color);
+}
 /* END CONTACT ME */
 
 /* BEGIN FOOTER */
 footer {
     background-color: var(--primary-color);
-    color: var(--font-1);
+    color: var(--quaternary-color);
     width: 100%;
     display: flex;
     justify-content: space-between;
