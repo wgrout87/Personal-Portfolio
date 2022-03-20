@@ -21,7 +21,7 @@ body {
     color: var(--font-1);
 }
 
-/* Utility Classes */
+/* UTILITY CLASSES */
 .link-button {
     background-color: var(--primary-accent);
     position: relative;
@@ -37,7 +37,7 @@ body {
     text-decoration: none;
 }
 
-/* BEGIN BUTTON STYLE */
+/* Utility classes - BEGIN BUTTON STYLE */
 .link-button::after, .link-button::before {
     content: "";
     position: absolute;
@@ -63,7 +63,33 @@ body {
 .link-button:hover {
     transform: translate(-12px, -12px);
 }
-/* END BUTTON STYLE */
+/* Utility classes - END BUTTON STYLE */
+
+.section-head-right {
+    margin-top: 100px;
+    background-color: var(--primary-accent);
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 30px;
+    border-radius: var(--border-radius-value) 0px 0px var(--border-radius-value);
+    font-size: 8vh;
+}
+
+.section-head-left {
+    margin-top: 100px;
+    background-color: var(--primary-accent);
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 30px;
+    border-radius: 0px var(--border-radius-value) var(--border-radius-value) 0px;
+    font-size: 8vh;
+}
+
+/* END UTILITY CLASSES */
 
 /* BEGIN HEADER */
 header {
@@ -76,6 +102,7 @@ header {
     position: sticky;
     top: 0;
     flex-wrap: wrap;
+    z-index: 9999;
 }
 
 header h1 {
@@ -95,44 +122,132 @@ header nav ul {
 header nav ul li a {
     padding: 0px 50px;
     margin: 0px 20px;
-    font-size: 1.55vw;
+    font-size: 3.5vh;
 }
 /* END HEADER */
 
 /* BEGIN HERO */
 .hero {
-    background-image: url(../images/clement-helardot-95YRwf6CNw8-unsplash-reversed-black-and-white.jpg);
+    background-image: url(../images/clement-helardot-95YRwf6CNw8-unsplash-black-and-white.jpg);
     background-size: cover;
     background-position: 0 35%;
     display: flex;
+    justify-content: end;
 }
 
 .hero div {
-    background-color: var(--primary-accent);
-    margin: 100px 0px 500px 0px;
-    width: 670px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    padding: 30px;
-    border-radius: 0px var(--border-radius-value) var(--border-radius-value) 0px;
+    margin-bottom: 500px;
 }
 
 .hero div h1 {
-    font-size: 72px;
+    font-size: 10vh;
 }
 
 .hero div p {
-    font-size: 20px;
+    font-size: 2.7vh;
 }
 /* END HERO */
 
 /* BEGIN ABOUT ME */
+.about-me {
+    background-color: var(--secondary-color);
+    display: flex;
+}
 
+.about-me img {
+    width: 25%;
+    float: left;
+    margin: 20px;
+}
+
+.about-me p {
+    width: 70%;
+    margin-left: 25%;
+    padding: 3%;
+    font-size: 2.7vh;
+    line-height: 1.5;
+}
 /* END ABOUT ME */
 
 /* BEGIN WORK */
+.work {
+    background-color: var(--tertiary-color);
+}
 
+.work-header {
+    display: flex;
+    justify-content: end;
+}
+
+.work-examples {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.work-examples article {
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: space-around;
+    border-radius: var(--border-radius-value);
+    padding: 30px;
+    margin-top: 2%;
+}
+
+.work-examples a {
+    flex: 1;
+    margin-right: 1%;
+}
+
+.work-examples a img {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    object-position: 0% 0%;
+}
+
+.work-examples div {
+    flex: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 1%;
+}
+
+.work-examples div label {
+    text-align: center;
+    width: 100%;
+    background-color: var(--font-1);
+    color: var(--primary-color);
+    padding: 1vh 5vh;
+    border-radius: var(--border-radius-value);
+}
+
+.first {
+    width: 90%;
+}
+
+.first div label {
+    font-size: 6vh;    
+}
+
+.first div p {
+    font-size: 4vh;
+}
+
+.not-first {
+    width: 44%;
+    margin: 0 1% 2% 1%;
+}
+
+.not-first div label {
+    font-size: 3vh;
+}
+
+.not-first div p {
+    font-size: 3vh;
+}
 /* END WORK */
 
 /* BEGIN CONTACT ME */
