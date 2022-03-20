@@ -66,7 +66,7 @@ body {
 /* Utility classes - END BUTTON STYLE */
 
 .section-head-right {
-    margin-top: 100px;
+    margin-top: 6%;
     background-color: var(--primary-accent);
     width: 50%;
     display: flex;
@@ -78,7 +78,7 @@ body {
 }
 
 .section-head-left {
-    margin-top: 100px;
+    margin-top: 6%;
     background-color: var(--primary-accent);
     width: 50%;
     display: flex;
@@ -183,6 +183,7 @@ header nav ul li a {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    margin-top: 2%;
 }
 
 .work-examples article {
@@ -192,11 +193,12 @@ header nav ul li a {
     border-radius: var(--border-radius-value);
     padding: 30px;
     margin-top: 2%;
+    position: relative;
+    width: 90%;
 }
 
 .work-examples a {
     flex: 1;
-    margin-right: 1%;
 }
 
 .work-examples a img {
@@ -206,47 +208,27 @@ header nav ul li a {
     object-position: 0% 0%;
 }
 
-.work-examples div {
-    flex: 1;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin-left: 1%;
-}
-
-.work-examples div label {
+.work-examples label {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 4vh;
     text-align: center;
-    width: 100%;
-    background-color: var(--font-1);
-    color: var(--primary-color);
-    padding: 1vh 5vh;
+    width: 30%;
+    background-color: var(--primary-color);
+    color: var(--font-1);
+    padding: 1vh;
     border-radius: var(--border-radius-value);
 }
 
-.first {
-    width: 90%;
+.work-examples article:not(:first-child) label{
+    width: 60%;
 }
 
-.first div label {
-    font-size: 6vh;    
-}
-
-.first div p {
-    font-size: 4vh;
-}
-
-.not-first {
+.work-examples article:not(:first-child) {
     width: 44%;
-    margin: 0 1% 2% 1%;
-}
-
-.not-first div label {
-    font-size: 3vh;
-}
-
-.not-first div p {
-    font-size: 3vh;
+    margin: 2% 1%;
 }
 /* END WORK */
 
