@@ -31,7 +31,7 @@ body {
 }
 
 .button-content {
-    padding: 0px 50px;
+    padding: 0px 1vw;
     text-shadow: 4px 4px 10px var(--secondary-color);
     color: var(--quaternary-color);
     text-decoration: none;
@@ -65,6 +65,7 @@ body {
 }
 /* Utility classes - END BUTTON STYLE */
 
+/* Utility classes - BEGIN SECTION HEADINGS */
 .section-head-right {
     margin-top: 6%;
     background-color: var(--primary-accent);
@@ -74,7 +75,8 @@ body {
     align-items: flex-start;
     padding: 30px;
     border-radius: var(--border-radius-value) 0px 0px var(--border-radius-value);
-    font-size: 8vh;
+    font-size: 6vh;
+    text-shadow: 4px 4px 10px var(--secondary-color);
 }
 
 .section-head-left {
@@ -86,9 +88,11 @@ body {
     align-items: flex-end;
     padding: 30px;
     border-radius: 0px var(--border-radius-value) var(--border-radius-value) 0px;
-    font-size: 8vh;
+    font-size: 6vh;
+    text-shadow: 4px 4px 10px var(--secondary-color);
+    text-align: right;
 }
-
+/* Utility classes - END SECTION HEADINGS */
 /* END UTILITY CLASSES */
 
 /* BEGIN HEADER */
@@ -120,7 +124,6 @@ header nav ul {
 }
 
 header nav ul li a {
-    padding: 0px 50px;
     margin: 0px 20px;
     font-size: 3.5vh;
 }
@@ -215,15 +218,10 @@ header nav ul li a {
     transform: translate(-50%, -50%);
     font-size: 4vh;
     text-align: center;
-    width: 30%;
     background-color: var(--primary-color);
     color: var(--quaternary-color);
     padding: 1vh;
     border-radius: var(--border-radius-value);
-}
-
-.work-examples article:not(:first-child) label{
-    width: 60%;
 }
 
 .work-examples article:not(:first-child) {
@@ -252,12 +250,12 @@ header nav ul li a {
 }
 
 .contact-me div h3 {
-    font-size: 5vh;
+    font-size: 2.5vw;
     margin-bottom: 6%;
 }
 
 .contact-me div address {
-    font-size: 3vh;
+    font-size: 1.5vw;
 }
 
 .contact-me div address a {
@@ -279,22 +277,90 @@ footer {
 }
 
 footer div {
-    padding: 5px 50px;
+    padding: .5% 2%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
 footer h2 {
-    margin-top: 11px;
+    margin-top: 2%;
+    font-size: 4vh;
 }
 
 footer p {
-    font-size: 20px;
-    margin-top: 16px;
+    font-size: 4vh;
+    margin-top: 2%;
 }
 
 footer a {
-    font-size: 18px;
+    font-size: 2.5vh;
 }
 /* END FOOTER */
+
+/* MEDIA QUERIES FOR SMALLER SCREENS */
+/* For smaller monitors and below */
+@media screen and (max-width: 1402px) {
+    header h1 {
+        margin-top: 15px;
+        margin-bottom: 0px;
+    }
+
+    .contact-me div h3 {
+        font-size: 3vw;
+    }
+    
+    .contact-me div address {
+        font-size: 2vw;
+    }
+
+    footer h2 {
+        font-size: 3vw;
+    }
+    
+    footer p {
+        font-size: 2.8vw;
+    }
+    
+    footer a {
+        font-size: 2.vw;
+    }
+}
+
+/* For tablets and below */
+@media screen and (max-width: 768px) {
+    header {
+        position: relative;
+    }
+
+    .button-content {
+        padding: 0px 10px;
+    }
+
+    .hero div {
+        margin-bottom: 250px;
+        width: 70%;
+    }
+
+    .hero div h1 {
+        font-size: 9vh;
+    }
+
+    footer h2 {
+        font-size: 3vw;
+    }
+    
+    footer p {
+        font-size: 2.8vw;
+    }
+    
+    footer a {
+        font-size: 2.5vw;
+    }
+}
+
+/* For mobile phones and below */
+@media screen and (max-width: 575px) {
+    
+}
