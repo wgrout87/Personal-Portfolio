@@ -5,7 +5,7 @@
     --tertiary-color: #848484;
     --quaternary-color: #c6c6c6;
     --primary-accent: #ff4500;
-    --border-radius-value: 12px;
+    --border-radius-value: 8px;
 }
 
 /* For ease of sizing, border-box is established to include borders and padding any time a size is specified */
@@ -276,7 +276,6 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
 }
 
 footer div {
@@ -301,25 +300,21 @@ footer p {
 /* MEDIA QUERIES FOR SMALLER SCREENS */
 /* For smaller monitors and below */
 @media screen and (max-width: 980px) {
+    .about-me img {
+        width: 300px;
+    }
+
     .about-me p {
         font-size: 16px;
+        margin-right: 50px;
     }
 
     .work-examples article {
-        padding: 30px;
-        margin: 40px;
         width: 700px;
     }
     
-    .work-examples a {
-        width: 740px;
-    }
-    
     .work-examples a img {
-        width: 100%;
         max-height: 270px;
-        object-fit: cover;
-        object-position: 0% 0%;
     }
     
     .work-examples label {
@@ -329,6 +324,10 @@ footer p {
     
     .work-examples article:not(:first-child) {
         width: 350px;
+    }
+
+    .contact-me div {
+        margin-right: 50px;
     }
 
     .contact-me div h3 {
@@ -342,10 +341,125 @@ footer p {
 
 /* For tablets and below */
 @media screen and (max-width: 768px) {
+    header h1 {
+        padding-left: 35px;
+    }
 
+    .hero .section-head-right {
+        width: 70%;
+    }
+
+    .about-me img {
+        width: 270px;
+    }
+
+    .about-me p {
+        margin-right: 0px;
+    }
+
+    .work-examples article {
+        width: 500px;
+        padding: 15px;
+    }
+    
+    .work-examples a img {
+        max-height: 240px;
+    }
+    
+    .work-examples label {
+        font-size: 20px;
+    }
+    
+    .work-examples article:not(:first-child) {
+        width: 300px;
+    }
+
+    .contact-me div {
+        margin-right: 20px;
+    }
+
+    .contact-me div h3 {
+        font-size: 28px;
+    }
+    
+    .contact-me div address {
+        font-size: 18px;
+    }
+
+    footer h2 {
+        font-size: 20px;
+    }
+
+    footer p {
+        font-size: 18px;
+    }
 }
 
 /* For mobile phones and below */
 @media screen and (max-width: 575px) {
+    .button-content {
+        font-size: 16px;
+    }
+
+    .section-head-left, .section-head-right {
+        font-size: 32px;
+        width: 75%;
+    }
+
+    header h1 {
+        font-size: 38px;
+        padding-left: 20px;
+    }
     
+    .hero .section-head-right {
+        width: 90%;
+    }
+
+    .hero div h1 {
+        font-size: 48px;
+    }
+
+    .about-me img {
+        width: 250px;
+    }
+
+    .work-examples article {
+        width: 300px;
+    }
+    
+    .work-examples a img {
+        max-height: 200px;
+    }
+    
+    .work-examples label {
+        font-size: 16px;
+    }
+    
+    .work-examples article:not(:first-child) {
+        width: 150px;
+    }
+
+    .contact-me .section-head-left {
+        width: 45%;
+    }
+
+    .contact-me div {
+        margin-right: 16px;
+    }
+
+    .contact-me div h3 {
+        font-size: 26px;
+    }
+
+    footer div {
+        padding: 15px;
+    }
+
+    footer h2 {
+        font-size: 18px;
+    }
+
+    footer p {
+        font-size: 16px;
+    }
 }
