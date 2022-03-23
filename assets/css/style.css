@@ -198,7 +198,7 @@ header nav ul li a {
     justify-content: space-around;
     border-radius: var(--border-radius-value);
     padding: 30px;
-    margin: 40px;
+    margin: 0px 20px 40px 20px;
     position: relative;
     width: 900px;
 }
@@ -226,6 +226,10 @@ header nav ul li a {
     color: var(--quaternary-color);
     padding: 10px;
     border-radius: var(--border-radius-value);
+}
+
+.work-header .section-head-right {
+    margin-bottom: 40px;
 }
 
 .work-examples article:not(:first-child) {
@@ -341,6 +345,10 @@ footer p {
 
 /* For tablets and below */
 @media screen and (max-width: 768px) {
+    header {
+        position: relative;
+    }
+
     header h1 {
         padding-left: 35px;
     }
@@ -360,6 +368,7 @@ footer p {
     .work-examples article {
         width: 500px;
         padding: 15px;
+        margin: 20px;
     }
     
     .work-examples a img {
@@ -368,6 +377,10 @@ footer p {
     
     .work-examples label {
         font-size: 20px;
+    }
+
+    .work-header .section-head-right {
+        margin-bottom: 20px;
     }
     
     .work-examples article:not(:first-child) {
@@ -402,7 +415,7 @@ footer p {
     }
 
     .section-head-left, .section-head-right {
-        font-size: 32px;
+        font-size: 26px;
         width: 75%;
     }
 
@@ -424,31 +437,40 @@ footer p {
     }
 
     .work-examples article {
-        width: 300px;
+        width: 340px;
+        margin: 10px;
     }
     
     .work-examples a img {
-        max-height: 200px;
+        max-height: 145px;
     }
     
     .work-examples label {
         font-size: 16px;
     }
+
+    .work-header .section-head-right {
+        margin-bottom: 10px;
+    }
     
     .work-examples article:not(:first-child) {
-        width: 150px;
+        width: 170px;
     }
 
     .contact-me .section-head-left {
-        width: 45%;
+        width: 40%;
     }
 
     .contact-me div {
-        margin-right: 16px;
+        margin: 0px 15px;
     }
 
     .contact-me div h3 {
-        font-size: 26px;
+        font-size: 18px;
+    }
+    
+    .contact-me div address {
+        font-size: 16px;
     }
 
     footer div {
@@ -456,10 +478,10 @@ footer p {
     }
 
     footer h2 {
-        font-size: 18px;
+        font-size: 20px;
     }
 
     footer p {
-        font-size: 16px;
+        font-size: 18px;
     }
 }
