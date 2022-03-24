@@ -21,18 +21,13 @@ Technologies used include HTML and CSS.
 ## Usage
 This repository contains my personal portfolio, which can be viewed on a variety of devices as it has been configured for multiple screen dimensions. Information conveyed includes an about me section, detailing how I got into web design, a works section, which shows off some of the projects I've completed, and a contact section.
 
-The deployed website should resemeble the following screenshots.
+The deployed website should resemeble the following screenshot. It has also been optimized for smaller screens.
 
 ![Personal Portfolio Desktop Screenshot](./assets/images/wgrout87.github.io_Personal-Portfolio_.png)
-
-![Personal Portfolio Smaller Screen Screenshot](./assets/images/wgrout87.github.io_Personal-Portfolio_Smaller_Screens.png)
-
-![Personal Portfolio Tablet Screenshot](./assets/images/wgrout87.github.io_Personal-Portfolio_Tablets.png)
-
-![Personal Portfolio Phone Screenshot](./assets/images/wgrout87.github.io_Personal-Portfolio_Phones.png)
 
 ## Credits
 The hero image used for the landing was created by Clément Hélardot and uploaded to https://unsplash.com/photos/95YRwf6CNw8. It is free to use under the Unsplash License.
 
 The button design code came from a YouTube video posted by Skillthrive:
+
 Skillthrive. (Dec 8, 2020.) 3 Awesome CSS Button Hover Effects Using HTML & CSS [Video file]. Retrieved by https://www.youtube.com/watch?v=iwoIuyRHy88&t=643s
