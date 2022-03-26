@@ -22,6 +22,7 @@ body {
 }
 
 /* UTILITY CLASSES */
+/* Styles the button shape and behavior */
 .link-button {
     background-color: var(--primary-accent);
     position: relative;
@@ -30,6 +31,7 @@ body {
     border-radius: var(--border-radius-value);
 }
 
+/* Styles the button text */
 .button-content {
     padding: 0px 10px;
     text-shadow: 2px 2px 10px var(--secondary-color);
@@ -39,6 +41,8 @@ body {
 }
 
 /* Utility classes - BEGIN BUTTON STYLE */
+/* All button style CSS content has been provided by the following YouTube tutorial:
+Skillthrive. (Dec 8, 2020.) 3 Awesome CSS Button Hover Effects Using HTML & CSS [Video file]. Retrieved by https://www.youtube.com/watch?v=iwoIuyRHy88&t=643s */
 .link-button::after, .link-button::before {
     content: "";
     position: absolute;
@@ -67,6 +71,7 @@ body {
 /* Utility classes - END BUTTON STYLE */
 
 /* Utility classes - BEGIN SECTION HEADINGS */
+/* Styles the alternating section heads */
 .section-head-right {
     margin-top: 40px;
     background-color: var(--primary-accent);
@@ -97,6 +102,7 @@ body {
 /* END UTILITY CLASSES */
 
 /* BEGIN HEADER */
+/* Styles header and locks it to the top of the window */
 header {
     background-color: var(--primary-color);
     width: 100%;
@@ -110,6 +116,7 @@ header {
     z-index: 9999;
 }
 
+/* Positions h1 and adds an orange background with rounded corners on the right side */
 header h1 {
     font-size: 48px;
     padding: 5px 10px 5px 50px;
@@ -119,20 +126,21 @@ header h1 {
     text-shadow: 4px 4px 10px var(--secondary-color);
 }
 
+/* nav button placement */
 header nav ul {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
     list-style: none;
 }
 
+/* nav button size */
 header nav ul li a {
     margin: 0px 20px;
 }
 /* END HEADER */
 
 /* BEGIN HERO */
+/* Position the background image for the landing and places the self intro to the right */
 .hero {
     background-image: url(../images/clement-helardot-95YRwf6CNw8-unsplash-black-and-white.jpg);
     background-size: cover;
@@ -141,33 +149,39 @@ header nav ul li a {
     justify-content: end;
 }
 
+/* Positions the self intro lower within this section. Also establishes the size of the landing */
 .hero div {
     margin-bottom: 500px;
     position: relative;
     top: 115px;
 }
 
+/* Font size for self intro h1 */
 .hero div h1 {
     font-size: 72px;
 }
 
+/* Font size for self intro p */
 .hero div p {
     font-size: 24px;
 }
 /* END HERO */
 
 /* BEGIN ABOUT ME */
+/* backround color and flex properties for the about-me section */
 .about-me {
     background-color: var(--secondary-color);
     display: flex;
 }
 
+/* Sizes and places img. Text will flow around it if necessary */
 .about-me img {
     width: 400px;
     float: left;
     margin: 20px;
 }
 
+/* About-me p aesthetics */
 .about-me p {
     padding: 50px;
     margin-right: 100px;
@@ -177,25 +191,27 @@ header nav ul li a {
 /* END ABOUT ME */
 
 /* BEGIN WORK */
+/*  */
 .work {
     background-color: var(--tertiary-color);
 }
 
+/* Places the section header to the left of the screen */
 .work-header {
     display: flex;
     justify-content: end;
 }
 
+/* Establishes the behavior of the cards in the works section */
 .work-examples {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
 
+/* Basic style for the works section cards */
 .work-examples article {
     background-color: var(--primary-color);
-    display: flex;
-    justify-content: space-around;
     border-radius: var(--border-radius-value);
     padding: 30px;
     margin: 0px 20px 40px 20px;
@@ -203,10 +219,12 @@ header nav ul li a {
     width: 900px;
 }
 
+/* Size for the width of anchor element consisting of an img and label */
 .work-examples a {
     width: 840px;
 }
 
+/* Img size and fit */
 .work-examples a img {
     width: 100%;
     max-height: 300px;
@@ -214,6 +232,7 @@ header nav ul li a {
     object-position: 0% 0%;
 }
 
+/* Label position in center of img */
 .work-examples label {
     position: absolute;
     top: 50%;
@@ -228,26 +247,36 @@ header nav ul li a {
     border-radius: var(--border-radius-value);
 }
 
+/* Shrinks text for the programming languages */
+.work-examples label span {
+    font-size: 16px;
+}
+
+/* Adjusts margin bottom to more equally space cards when wrapped */
 .work-header .section-head-right {
     margin-bottom: 40px;
 }
 
+/* Shrinks cards to keep the first one larger - conversely the first card could also have been enlarged instead of shrinking subsequent cards */
 .work-examples article:not(:first-child) {
-    width: 450px;
+    width: 430px;
 }
 /* END WORK */
 
 /* BEGIN CONTACT ME */
+/* Establishes backround color and separates elements within the section */
 .contact-me {
     background-color: var(--quaternary-color);
     display: flex;
     justify-content: space-between;
 }
 
+/* Expands the size of this section */
 .contact-me h2 {
     margin-bottom: 100px;
 }
 
+/* Positions contact info */
 .contact-me div {
     color: var(--primary-color);
     display: flex;
@@ -256,15 +285,18 @@ header nav ul li a {
     margin-right: 100px;
 }
 
+/* Styles for my name in the contact section */
 .contact-me div h3 {
     font-size: 48px;
     margin-bottom: 20px;
 }
 
+/* Address font size */
 .contact-me div address {
     font-size: 24px;
 }
 
+/* Styles for the email address */
 .contact-me div address a {
     text-decoration: none;
     font-weight: 600;
@@ -273,6 +305,7 @@ header nav ul li a {
 /* END CONTACT ME */
 
 /* BEGIN FOOTER */
+/* Places elements within the footer to either side and centered vertically */
 footer {
     background-color: var(--primary-color);
     color: var(--quaternary-color);
@@ -282,6 +315,7 @@ footer {
     align-items: center;
 }
 
+/* Spacing and behavior within the two divs */
 footer div {
     padding: 15px 40px;
     display: flex;
@@ -290,11 +324,13 @@ footer div {
     justify-content: center;
 }
 
+/* Font size and spacing adjusted (Presented by...) */
 footer h2 {
     margin-top: 15px;
     font-size: 32px;
 }
 
+/* Font size and spacing adjusted (Thanks...)*/
 footer p {
     font-size: 24px;
     margin-top: 15px;
@@ -302,186 +338,278 @@ footer p {
 /* END FOOTER */
 
 /* MEDIA QUERIES FOR SMALLER SCREENS */
-/* For smaller monitors and below */
+/* BEGIN ADJUSTMENTS FOR SMALLER MONITORS AND BELOW */
 @media screen and (max-width: 980px) {
+    /* BEGIN ABOUT ME ADJUSTMENTS */
+    /* Resizes img of me in about-me section */
     .about-me img {
         width: 300px;
     }
 
+    /* Resizes p font to better fit a smaller screen */
     .about-me p {
         font-size: 16px;
         margin-right: 50px;
     }
+    /* END ABOUT ME ADJUSTMENTS */
 
+    /* BEGIN WORK ADJUSTMENTS */
+    /* Resizes first work card */
     .work-examples article {
         width: 700px;
     }
     
+    /* Resizes work card images */
     .work-examples a img {
         max-height: 270px;
     }
     
+    /* Adjusts labels for smaller sized images */
     .work-examples label {
         font-size: 24px;
         padding: 5px;
     }
-    
-    .work-examples article:not(:first-child) {
-        width: 350px;
-    }
 
+    /* Adjusts span text in keeping with resized label text */
+    .work-examples label span {
+        font-size: 12px;
+    }
+    
+    /* Adjusts card size for 2nd cards and on */
+    .work-examples article:not(:first-child) {
+        width: 330px;
+    }
+    /* END WORK ADJUSTMENTS */
+
+    /* BEGIN CONTACT ME ADJUSTMENTS */
+    /* Changes placement of address div */
     .contact-me div {
         margin-right: 50px;
     }
 
+    /* Adjusts font size of my name */
     .contact-me div h3 {
         font-size: 32px;
     }
     
+    /* Adjusts font size of my address */
     .contact-me div address {
         font-size: 20px;
     }
+    /* END CONTACT ME ADJUSTMENTS */
 }
+/* END ADJUSTMENTS FOR SMALLER MONITORS AND BELOW */
 
-/* For tablets and below */
+/* BEGIN ADJUSTMENTS FOR TABLETS AND BELOW */
 @media screen and (max-width: 768px) {
+    /* BEGIN HEADER ADJUSTMENTS */
+    /* Stops header from sticking to the top of the screen */
     header {
         position: relative;
     }
 
+    /* Adjusts spacing of header h1 */
     header h1 {
         padding-left: 35px;
     }
+    /* END HEADER ADJUSTMENTS */
 
+    /* BEGIN HERO ADJUSTMENTS */
+    /* Extends out the section head to better encapsulate text */
     .hero .section-head-right {
         width: 70%;
     }
+    /* END HERO ADJUSTMENTS */
 
+    /* BEGIN ABOUT ME ADJUSTMENTS */
+    /* Resizes img of me in about-me section */
     .about-me img {
         width: 270px;
     }
 
+    /* Removes spacing to the right to cope with diminished screen space */
     .about-me p {
         margin-right: 0px;
     }
+    /* END ABOUT ME ADJUSTMENTS */
 
+    /* BEGIN WORK ADJUSTMENTS */
+    /* Resizes first work card */
     .work-examples article {
         width: 500px;
         padding: 15px;
         margin: 20px;
     }
     
+    /* Resizes work card images */
     .work-examples a img {
         max-height: 240px;
     }
     
+    /* Adjusts labels for smaller sized images */
     .work-examples label {
         font-size: 20px;
     }
 
+    /* Adjusts span text in keeping with resized label text */
+    .work-examples label span {
+        font-size: 10px;
+    }
+
+    /* Adjusts margin bottom to more equally space cards when wrapped */
     .work-header .section-head-right {
         margin-bottom: 20px;
     }
     
+    /* Adjusts card size for 2nd cards and on */
     .work-examples article:not(:first-child) {
-        width: 300px;
+        width: 230px;
     }
+    /* END WORK ADJUSTMENTS */
 
+    /* BEGIN CONTACT ME ADJUSTMENTS */
+    /* Changes placement of address div */
     .contact-me div {
         margin-right: 20px;
     }
 
+    /* Adjusts font size of my name */
     .contact-me div h3 {
         font-size: 28px;
     }
     
+    /* Adjusts font size of my address */
     .contact-me div address {
         font-size: 18px;
     }
+    /* END CONTACT ME ADJUSTMENTS */
 
+    /* BEGIN FOOTER ADJUSTMENTS */
+    /* Font size adjusted  (Presented by...)*/
     footer h2 {
         font-size: 20px;
     }
 
+    /* Font size adjusted (Thanks...)*/
     footer p {
         font-size: 18px;
     }
+    /* END FOOTER ADJUSTMENTS */
 }
+/* END ADJUSTMENTS FOR TABLETS AND BELOW */
 
-/* For mobile phones and below */
+/* BEGIN ADJUSTMENTS FOR MOBILE PHONES AND BELOW */
 @media screen and (max-width: 575px) {
+    /* BEGIN UTILITY CLASS ADJUSTMENTS */
+    /* Font size adjusted effectively shrinking the buttons */
     .button-content {
         font-size: 16px;
     }
 
+    /* Section heads adjusted to better fit smaller screens */
     .section-head-left, .section-head-right {
         font-size: 26px;
-        width: 75%;
+        width: 65%;
     }
+    /* END UTILITY CLASS ADJUSTMENTS */
 
+    /* BEGIN HEADER ADJUSTMENTS */
+    /* Adjusts spacing and font size of header h1 */
     header h1 {
         font-size: 38px;
         padding-left: 20px;
     }
+    /* END HEADER ADJUSTMENTS */
     
+    /* BEGIN HERO ADJUSTMENTS */
+    /* Extends out the section head to better encapsulate text */
     .hero .section-head-right {
         width: 90%;
     }
 
+    /* Shrinks h1 element in the hero section */
     .hero div h1 {
         font-size: 48px;
     }
+    /* END HERO ADJUSTMENTS */
 
+    /* BEGIN ABOUT ME ADJUSTMENTS */
+    /* Resizes img of me in about-me section */
     .about-me img {
         width: 250px;
     }
+    /* END ABOUT ME ADJUSTMENTS */
 
+    /* BEGIN WORK ADJUSTMENTS */
+    /* Resizes first work card */
     .work-examples article {
         width: 340px;
         margin: 10px;
     }
     
+    /* Resizes work card images */
     .work-examples a img {
         max-height: 145px;
     }
-    
+
+    /* Adjusts labels for smaller sized images */
     .work-examples label {
         font-size: 16px;
     }
 
+    /* Adjusts span text in keeping with resized label text */
+    .work-examples label span {
+        font-size: 8px;
+    }
+
+    /* Adjusts margin bottom to more equally space cards when wrapped */
     .work-header .section-head-right {
         margin-bottom: 10px;
     }
     
+    /* Adjusts card size for 2nd cards and on */
     .work-examples article:not(:first-child) {
-        width: 170px;
+        width: 160px;
     }
+    /* END WORK ADJUSTMENTS */
 
+    /* BEGIN CONTACT ME ADJUSTMENTS */
+    /* Adjusts section head to not crowd out address div on right */
     .contact-me .section-head-left {
         width: 40%;
     }
 
+    /* Changes placement of address div */
     .contact-me div {
         margin: 0px 15px;
     }
 
+    /* Adjusts font size of my name */
     .contact-me div h3 {
         font-size: 18px;
     }
     
+    /* Adjusts font size of my address */
     .contact-me div address {
         font-size: 16px;
     }
+    /* END CONTACT ME ADJUSTMENTS */
 
+    /* BEGIN FOOTER ADJUSTMENTS */
+    /* Adjusts spacing within the two divs */
     footer div {
         padding: 15px;
     }
 
+    /* Font size adjusted (Presented by...) */
     footer h2 {
         font-size: 20px;
     }
 
+    /* Font size adjusted (Thanks...) */
     footer p {
         font-size: 18px;
     }
+    /* END FOOTER ADJUSTMENTS */
 }
+/* END ADJUSTMENTS FOR MOBILE PHONES AND BELOW */
