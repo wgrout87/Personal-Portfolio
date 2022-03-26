@@ -21,7 +21,7 @@ Technologies used include HTML and CSS.
 ## Usage
 This repository contains my personal portfolio, which can be viewed on a variety of devices as it has been configured for multiple screen dimensions. Information conveyed includes an about me section, detailing how I got into web design, a works section, which shows off some of the projects I've completed, and a contact section.
 
-The deployed website should resemeble the following screenshot. It has also been optimized for smaller screens.
+The deployed website should resemeble the following screenshot. Some changes will be present on smaller screens.
 
 ![Personal Portfolio Desktop Screenshot](./assets/images/wgrout87.github.io_Personal-Portfolio_.png)
 
