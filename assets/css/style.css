@@ -536,6 +536,7 @@ footer p {
     /* BEGIN ABOUT ME ADJUSTMENTS */
     /* Resizes img of me in about-me section */
     .about-me img {
+        float: none;
         width: 250px;
     }
     /* END ABOUT ME ADJUSTMENTS */
